@@ -77,7 +77,7 @@ function randomArrayGenerator() {
         randomArr[i] = arr[indexArr[i]];
     }
     for (let i = 0; i < N; i++) {
-        cards[i].innerHTML = `<img class="card-img" src="${randomArr[i].imgAdd}" alt="">`;
+        cards[i].innerHTML = `<img class="card-img" src="./${randomArr[i].imgAdd}" alt="">`;
         cards[i].classList.add("check");
     }
 }
