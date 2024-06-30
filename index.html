@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <h1>• Memory Game •</h1>
+    </nav>
+    <div class="selectGrid">
+        <h3>Level:</h3>
+        <select onchange="gridChange(value)" id="gridSelect">
+            <option selected value="16">16 Cards</option>
+            <option value="20">20 Cards</option>
+            <option value="24">24 Cards</option>
+            <option value="30">30 Cards</option>
+        </select>
+    </div>
+    <main>
+        <div class="opac-congo d-n"></div>
+        <div class="congo d-n">
+            <h1>
+                Congrats You Finished The Round
+            </h1>
+            <h2>
+                Reseting Game in 5 seconds...
+            </h2>
+        </div>
+        <div class="grid-cards">
+        </div>
+    </main>
+    <div class="scoreCard">
+        <div class="scoreCont">
+            <div class="scores">
+                <div class="moves  score">0</div>
+                <div class="category">MOVES</div>
+            </div>
+            <div class="scores">
+                <div class="misses score">0</div>
+                <div class="category">MISSES</div>
+            </div>
+            <div class="scores">
+                <div class="roundsPlayed score">0</div>
+                <div class="category">ROUNDS PLAYED</div>
+            </div>
+        </div>
+        <div class="scoreCont">
+            <button onclick="resetGame()" class="reset">Reset</button>
+            <div class="speed">
+                <select onchange="speedChange(value)" id="speed">
+                    <option value="Fast">Fast</option>
+                    <option selected value="Normal">Normal</option>
+                    <option value="Slow">Slow</option>
+                </select>
+                <div class="category">Speed</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Made By Neel Kotkar
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
