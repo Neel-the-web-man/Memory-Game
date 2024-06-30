@@ -36,12 +36,12 @@ function gridChange(value) {
         if (i < N / 2) {
             arr[i] = {
                 id: i,
-                imgAdd: `/img${i + 1}.png`,
+                imgAdd: `img${i + 1}.png`,
             }
         } else {
             arr[i] = {
                 id: i,
-                imgAdd: `/img${i - ((N / 2) - 1)}.png`,
+                imgAdd: `img${i - ((N / 2) - 1)}.png`,
             }
         }
     }
